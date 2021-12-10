@@ -6,13 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel.I2000</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
+        $(document).ready(function()){
+            $("html").fadeIn();
+        });
+        $("#maintitle").click(function(){
+            document.getElementsByName("html,body").style.overflow = 'scroll';
+        });
 
     </script>
     <style>
         body,html {
             height: 100%;
             width: 100%;
+            overflow: hidden;
+            scroll-behavior: smooth;
         }
         .background  {
             /* background image not set */
@@ -29,7 +39,7 @@
 </head>
 <body>
      <div class="background">
-        <p class="titleone">Intel.I2000</p>
+        <p  id="maintitle" class="titleone">Intel.I2000</p>
     </div>
 </body>
 </html>
